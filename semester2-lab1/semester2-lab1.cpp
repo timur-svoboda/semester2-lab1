@@ -56,13 +56,15 @@ int main()
     // Add obstacles
     const int obstNum = randWithin(0, field.size() - 2);
     randFill(field, pos, obst, obstNum);
-    
+
     // Output field
     for (size_t i = 0; i < h; i++) {
         for (size_t j = 0; j < w; j++)
             cout << field[i][j] << ' ';
         cout << '\n';
     }
+
+    // Find path)
 }
 
 size_t getIntGreaterThan(size_t x) {
